@@ -2,5 +2,5 @@ package com.enrol
 
 class ModuleController {
 
-    def scaffold = Course
+    def scaffold = Module
 }
