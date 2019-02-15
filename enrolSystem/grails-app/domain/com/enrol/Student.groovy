@@ -9,7 +9,8 @@ class Student {
    String  studentEmail
    String  studentUsername
    String  studentPassword
-   String  course
+   String  course	
+   String  bio
 
 
     static constraints = 
@@ -22,8 +23,7 @@ class Student {
 	studentPassword    nullable:false, blank:false;
 	isFundingAvailable nullable:false, blank:false;
 	course             nullable:false, blank:false;
-	
-
+	bio	           nullable:false, blank:false;
 
       }
 
