@@ -2,15 +2,25 @@ package com.enrol
 
 class Course {
 
-String  department
-String  courseTitle
-String  courseLeader
-String  courseCode
-Date    startDate
-Date    endDate
-String  description
-int     numberOfStudents 
-double  tuitionFees
+String   department
+String   courseTitle
+Lecturer courseLeader
+String   courseCode
+Date     startDate
+Date     endDate
+String   description
+int      numberOfStudents 
+double   tuitionFees
+
+static hasMany=[students:Student,lecturers:Lecturer,modules:Module]
+
+static belongsTo=[Course]
+
+String toString(){
+
+return courseTitle 
+
+}
 
     static constraints = 
 	{

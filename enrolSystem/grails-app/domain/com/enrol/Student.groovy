@@ -2,16 +2,22 @@ package com.enrol
 
 class Student {
 
-   String  studentName
+   String studentName																																																																																																	
    String  studentID
    Date    dob
    Boolean isFundingAvailable
    String  studentEmail
    String  studentUsername
    String  studentPassword
-   String  course	
    String  bio
+   Course  course
+  	
 
+String toString(){
+
+return studentName
+
+}
 
     static constraints = 
        {
